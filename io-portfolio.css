@@ -26,9 +26,13 @@ p {
 img {
 	width: 40%;
 }
+h2 {
+	margin: 0;
+}
 .about {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	padding: 10px 0;
 	background-color: #D8D3CD;
 	color: #797A7E;
@@ -55,6 +59,8 @@ img {
 
 .project-container {
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	padding: 10px 0;
 }
 
