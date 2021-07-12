@@ -3,23 +3,74 @@ html {
 }
 
 nav {
-	color: rgba(224, 236, 228 1.0);
+	color: #D8D3CD;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 10px;
 	align-items: center;
-	background-color: rgba(121, 122, 126, 1.0);
+	background-color: #797A7E;
 }
 
 a {
-	color: rgba(224, 236, 228 1.0);
+	color: #F7F2E7;
 	text-decoration: none;
+	padding: 10px;
 }
 
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+img {
+	width: 40%;
+}
+.about {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0;
+	background-color: #D8D3CD;
+	color: #797A7E;
+}
+
+.centralise {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.portfolio {
+	margin-top: 0;
+	background-color: #F7F2E7;
+	color: #797A7E;
+}
+.portfolio img {
+	padding-top: 10px;
+}
+
+.portfolio p {
+	padding: ;
+}
+
+.project-container {
+	display: flex;
+	padding: 10px 0;
+}
+
+.contact {
+	background-color: #E0ECE4;
+	margin-top: 0;
+}
+
+@media screen and (max-width: 800px) {
+	.project-container {
+		flex-direction: column;
+	}
+}
 /* 
-Dark grey gba(121, 122, 126, 1.0) 
-Lighter grey/brown rgba(216, 211, 205, 1.0)
-pastel neutral rgba(247, 242, 231 1.0)
-pastel turquoise rgba(224, 236, 228 1.0)
+Dark grey #797A7E
+Lighter grey/brown #D8D3CD
+pastel neutral #F7F2E7
+pastel turquoise #E0ECE4
 */
