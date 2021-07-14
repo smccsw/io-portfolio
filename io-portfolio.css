@@ -1,9 +1,7 @@
-
 * {
 	margin: 0;
 	box-sizing: border-box;
 } 
-
 html {
 	font-family: Arvo, serif;
 	font-size: 18px;
@@ -17,7 +15,6 @@ nav {
 	align-items: center;
 	background-color: #797A7E;
 }
-
 footer { 
     font-family: FontAwesome, sans-serif;
 	font-size: 1.25rem;
@@ -30,7 +27,6 @@ footer {
 	background-color: #797A7E;
 	justify-content: space-around;
 }
-
 h2 {
 	padding: 20px;
 }
@@ -63,13 +59,7 @@ img {
 	font-family: open-sans, sans-serif;
 	font-size: 1rem;
 }
-.container h1 {
-	padding: 20px;
-}
-.container h2 {
-	padding: 20px;
-}
-.container h3 {
+.container h1, .container h2, .container h3 {
 	padding: 20px;
 }
 .introduction {
@@ -78,7 +68,6 @@ img {
 	color: #797A7E;
 }
 .icon {
-	padding: 20px;
 	font-size: 1.25rem;
 }
 .about {
@@ -100,6 +89,9 @@ img {
 	background-color: #F7F2E7;
 	color: #797A7E;
 }
+.portfolio .icon {
+	padding: 20px;
+}
 .contact {
 	color: #D8D3CD;
 	display: flex;
@@ -108,6 +100,11 @@ img {
 	padding: 10px;
 	align-items: center;
 	background-color: #797A7E;
+}
+.social-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 @media screen and (max-width: 800px) {
 	.project-container {
