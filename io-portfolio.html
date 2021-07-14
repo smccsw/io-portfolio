@@ -2,54 +2,106 @@
 <html lang="en">
 <head> 
 	<title>io-portfolio</title>
-	<link rel="stylesheet" href=normalize.css>
-	<link rel="stylesheet" href=io-portfolio.css>
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="io-portfolio.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 </head> 
 
 <body>
 	<nav>
-		<div class="centralise">
-			<span>
-			<a href="#">About Me</a>
-			<a href="#">Portfolio</a>
-			<a href="#">Contact</a>
-			</span>
+		<div>
+
+			<a href="io-portfolio.html#about-me">About Me</a>
+			<a href="io-portfolio.html#my-portfolio">Portfolio</a>
+			<a href="io-portfolio.html#contact-me">Contact</a>
+
 		</div>
 	</nav>
 	
-	<section class="about">
-		<div class="centralise">
-			<img src="images/road-6394983_640.jpg" alt="Stock Picture">
-				<span>
+	<section class="introduction">
+		<div class="container centralise">
+			
+			<div>
 				<h1>Welcome to my portfolio!</h1>
-				<p>This is me. I have done some things, all of which are irrelevant and therefore undocumented at the moment. But that will change soon and you'll find the details below</p>
-				</span>
+				<p>I'm Stuart, a developing developer.</p>
+			</div>
+			<div>
+				<img src="images/carstoon.png" class="cartoon-me" alt="Stock Picture">
+			</div>
 		</div>	
 	</section>
 	
-	<section class="portfolio">
-		<div class="project-container centralise">
-			<img src="images/Portfolio-screenshot.jpg" alt="Portfolio Website">
-			<p>This project acts as a portfolio of my projects. It's also the website you're browsing at the moment. It utilises HTML and CSS.</p>
+	<section class="about" id="about-me">
+		<div class="container centralise">	
+			<div>
+				<img src="images/carstoon.png" class="cartoon-me" alt="Stock Picture">
+			</div>
+			<div>
+				<h2>About me</h2>
+				<p>I'd used HTML and CSS a little in my previous role as an IT Manager and really enjoyed it. Whilst watching the government fumble around with their test and trace app during the pandemic, I thought "how hard can it be?" and decided to find out. I'll let you know.</p>
+			</div>
+		</div>	
+	</section>
+
+	<section class="portfolio" id="my-portfolio">
+		<div class="container centralise">
+			<h2>My Projects</h2>
 		</div>
-		<div class="project-container centralise">
-			<img src="images/Portfolio-screenshot.jpg" alt="Portfolio Website">
-			<p>This project acts as a portfolio of my projects. It's also the website you're browsing at the moment. It utilises HTML and CSS.</p>
+	</section>
+	<section class="portfolio" id="my-portfolio">
+		<div class="container centralise">
+			<div>
+				<img src="images/portfolio-screenshot.png" class="cartoon-me" alt="Stock Picture">
+			</div>
+			<div>
+				<h3>Project Title</h3>
+				<p>This project is as a portfolio of my projects. It's also the website you're browsing at the moment. It utilises HTML and CSS.</p>
+			</div>
 		</div>
-		<div class="project-container centralise">
-			<img src="images/Portfolio-screenshot.jpg" alt="Portfolio Website">
-			<p>This project acts as a portfolio of my projects. It's also the website you're browsing at the moment. It utilises HTML and CSS.</p>
+	</section>
+	<section class="portfolio" id="my-portfolio">
+		<div class="container centralise">
+			<div>
+				<img src="images/carstoon.png" class="cartoon-me" alt="Stock Picture">
+			</div>
+			<div>
+				<h3>Project Title</h3>
+				<p>This project is as a portfolio of my projects. It's also the website you're browsing at the moment. It utilises HTML and CSS.</p>
+			</div>
 		</div>
-		<div class="project-container centralise">
-			<img src="images/Portfolio-screenshot.jpg" alt="Portfolio Website">
-			<p>This project acts as a portfolio of my projects. It's also the website you're browsing at the moment. It utilises HTML and CSS.</p>
-		</div>			
+	</section>
+	<section class="portfolio" id="my-portfolio">
+		<div class="container centralise">
+			<div>
+				<img src="images/carstoon.png" class="cartoon-me" alt="Stock Picture">
+			</div>
+			<div>
+				<h3>Project Title</h3>
+				<p>This project is as a portfolio of my projects. It's also the website you're browsing at the moment. It utilises HTML and CSS.</p>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="my-portfolio">
+		<div class="container centralise">
+			<div>
+				<img src="images/carstoon.png" class="cartoon-me" alt="Stock Picture">
+			</div>
+			<div>
+				<h3>Project Title</h3>
+				<p>This project is as a portfolio of my projects. It's also the website you're browsing at the moment. It utilises HTML and CSS.</p>
+			</div>
+		</div>
 	</section>
 	
-	<footer class="contact">
+	<footer class="contact" id="contact-me">
 			<div class="centralise">
 				<h2>Contact</h2>
-				<p>Leave me alone!</p>
+				<a href="#"><i class="far fa-envelope"></i>
+				</a>
 			</div>	
 	</footer>
 </body>
+</html>
+
