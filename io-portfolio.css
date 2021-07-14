@@ -33,7 +33,6 @@ a:hover {
 img {
 	width: 30%;
 }
-
 /*each section of the site apart from the nav uses the same container class*/
 .container {
 	display: flex;
@@ -50,7 +49,6 @@ img {
 	padding: 20px;
 	font-family: open-sans, sans-serif;
 	font-size: 1rem;
-
 }
 .container h1 {
 	padding: 20px;
@@ -74,12 +72,11 @@ img {
 .cartoon-me {
 	width: 300px;
 }
-.centralise {
+.centralise { /* used to ensure content is in the centre of the screen*/
 	align-items: center;
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
-
 }
 .portfolio {
 	padding: 40px 10px;
@@ -87,11 +84,14 @@ img {
 	color: #797A7E;
 }
 .contact {
-	background-color: #797A7E;
-	color: #F7F2E7;
+	color: #D8D3CD;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	padding: 10px;
+	align-items: center;
+	background-color: #797A7E;
 }
-
 @media screen and (max-width: 800px) {
 	.project-container {
 		flex-direction: column;
