@@ -1,9 +1,11 @@
 * {
 	margin: 0;
+	box-sizing: border-box;
 } 
 
 html {
-	font-family: Arial, sans-serif;
+	font-family: Arvo, serif;
+	font-size: 18px;
 }
 nav {
 	color: #D8D3CD;
@@ -14,64 +16,81 @@ nav {
 	align-items: center;
 	background-color: #797A7E;
 }
+
+i { 
+    font-family: 'FontAwesome', sans-serif; 
+}
 a {
 	color: #F7F2E7;
 	text-decoration: none;
+	font-size: 1.2rem;
 	padding: 10px;
 }
 a:hover {
 	color: #E0ECE4;
 }
-p {
-	max-width: 40%;
-}
 img {
 	width: 30%;
 }
-.about {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 10px;
-	align-items: center;
 
-	padding: 10px 10px;
+/*each section of the site apart from the nav uses the same container class*/
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 800px;
+	padding: 10px;
+	overflow: hidden;
+}
+.container p {
+	justify-content: center;
+	max-width: 500px;
+	padding: 20px;
+	font-family: open-sans, sans-serif;
+	font-size: 1rem;
+
+}
+.container h1 {
+	padding: 20px;
+}
+.container h2 {
+	padding: 20px;
+}
+.container h3 {
+	padding: 20px;
+}
+.introduction {
+	padding: 40px 10px;
 	background-color: #D8D3CD;
 	color: #797A7E;
 }
-/*.about-me-container {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-}*/
+.about {
+	padding: 40px 10px;
+	background-color: #E0ECE4;
+	color: #797A7E;
+}
 .cartoon-me {
-	width: 200px;
+	width: 300px;
 }
 .centralise {
 	align-items: center;
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
+
 }
 .portfolio {
+	padding: 40px 10px;
 	background-color: #F7F2E7;
 	color: #797A7E;
 }
-.portfolio img {
-	margin-left: auto;
-}
-.portfolio p {
-	padding-left: 20px;
-}
-.project-container {
-	display: flex;
-	align-items: center;
-	padding: 10px;
-}
 .contact {
-	background-color: #E0ECE4;
+	background-color: #797A7E;
+	color: #F7F2E7;
 	padding: 10px;
 }
+
 
 @media screen and (max-width: 800px) {
 	.project-container {
