@@ -1,13 +1,12 @@
 * {
-	margin: 0;
-	box-sizing: border-box;
-} 
-html {
-	font-family: Arvo, serif;* {
 	font-size: 18px;
 	margin: 0;
 	box-sizing: border-box;
 } 
+
+html {
+	font-family: Arvo, serif;
+}
 /*test comment*/
 nav {
 	position: fixed;
@@ -20,6 +19,7 @@ nav {
 	align-items: center;
 	background-color: #797A7E;
 }
+
 footer { 
 	font-family: FontAwesome, sans-serif;
 	font-size: 1.25rem;
@@ -48,23 +48,25 @@ img {
 	width: 30%;
 }
 /*each section of the site apart from the nav uses the same container class*/
-.container {
+.content-wrapper {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	max-width: 800px;
 	padding: 10px;
 	overflow: hidden;
+	align-items: center;
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
 }
-.container p {
-	justify-content: center;
+.content-wrapper p {
 	max-width: 500px;
 	padding: 20px;
 	font-family: open-sans, sans-serif;
 	font-size: 1rem;
 }
-.container h1, .container h2, .container h3 {
+.content-wrapper h1, .content-wrapper h2, .content-wrapper h3 {
 	padding: 20px;
 }
 .introduction {
@@ -80,14 +82,8 @@ img {
 	background-color: #E0ECE4;
 	color: #797A7E;
 }
-.cartoon-me {
+.image-resize {
 	width: 300px;
-}
-.centralise { /* used to ensure content is in the centre of the screen*/
-	align-items: center;
-	max-width: 1100px;
-	margin-left: auto;
-	margin-right: auto;
 }
 .portfolio {
 	padding: 40px 10px;
@@ -95,7 +91,7 @@ img {
 	color: #797A7E;
 }
 .portfolio .icon {
-	padding: 20px;
+	color: #797A7E;
 }
 .contact {
 	color: #D8D3CD;
@@ -116,117 +112,8 @@ img {
 		flex-direction: column;
 	}
 }
-/* 
-Dark grey #797A7E
-Lighter grey/brown #D8D3CD
-pastel neutral #F7F2E7
-pastel turquoise #E0ECE4
-*/
 
-	font-size: 18px;
-}
-nav {
-	position: fixed;
-	width: 100%;
-	color: #D8D3CD;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 10px;
-	align-items: center;
-	background-color: #797A7E;
-}
-footer { 
-    font-family: FontAwesome, sans-serif;
-	font-size: 1.25rem;
-	color: #D8D3CD;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 10px;
-	align-items: center;
-	background-color: #797A7E;
-	justify-content: space-around;
-}
-h2 {
-	padding: 20px;
-}
-a {
-	color: #F7F2E7;
-	text-decoration: none;
-	font-size: 1.2rem;
-	padding: 20px;
-}
-a:hover {
-	color: #E0ECE4;
-}
-img {
-	width: 30%;
-}
-/*each section of the site apart from the nav uses the same container class*/
-.container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	max-width: 800px;
-	padding: 10px;
-	overflow: hidden;
-}
-.container p {
-	justify-content: center;
-	max-width: 500px;
-	padding: 20px;
-	font-family: open-sans, sans-serif;
-	font-size: 1rem;
-}
-.container h1, .container h2, .container h3 {
-	padding: 20px;
-}
-.introduction {
-	padding: 40px 10px;
-	background-color: #D8D3CD;
-	color: #797A7E;
-}
-.icon {
-	font-size: 1.25rem;
-}
-.about {
-	padding: 40px 10px;
-	background-color: #E0ECE4;
-	color: #797A7E;
-}
-.cartoon-me {
-	width: 300px;
-}
-.centralise { /* used to ensure content is in the centre of the screen*/
-	align-items: center;
-	max-width: 1100px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.portfolio {
-	padding: 40px 10px;
-	background-color: #F7F2E7;
-	color: #797A7E;
-}
-.portfolio .icon {
-	padding: 20px;
-}
-.contact {
-	color: #D8D3CD;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 10px;
-	align-items: center;
-	background-color: #797A7E;
-}
-.social-icons {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
+
 @media screen and (max-width: 800px) {
 	.project-container {
 		flex-direction: column;
