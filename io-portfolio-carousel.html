@@ -4,7 +4,7 @@
 <head>
 	<title>Stuart McCann Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="io-portfolio.css">
+	<link rel="stylesheet" type="text/css" href="io-portfolio-carousel.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
 		</div>
 	</nav>
 
-	<section class="introduction" id="introduction">
+	<!-- <section class="introduction" id="introduction">
 		<div class="content-wrapper">
 
 			<div>
@@ -119,8 +119,63 @@
 				<a target="_blank" href="#"><i class="fas fa-link icon"></i></a>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
+	<!--here onwards = carousel trial-->
+	<div class="carousel">
+		<button class="carousel-button carousel-button-left">
+			<img src="images/left-chevron.svg" alt="Left chevron">
+		</button>
+		<div class="carousel-track-container">
+			<ul class="carousel-track">
+				<li class="carousel-slide"><div class="content-wrapper">
+					<div>
+						<img src="https://via.placeholder.com/350x200" alt="" class="image-resize" alt="Stock Picture">
+					</div>
+					<div>
+						<h3>Project Title</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a target="_blank" href="#"><i class="fab fa-github icon"></i></a>
+						<a target="_blank" href="#"><i class="fas fa-link icon"></i></a>
+					</div>
+				</div></li>
+				
+				<li class="carousel-slide"><div class="content-wrapper">
+					<div>
+						<img src="https://via.placeholder.com/350x200" alt="" class="image-resize" alt="Stock Picture">
+					</div>
+					<div>
+						<h3>Project Title</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a target="_blank" href="#"><i class="fab fa-github icon"></i></a>
+						<a target="_blank" href="#"><i class="fas fa-link icon"></i></a>
+					</div>
+				</div>
+				</li>
+				<li class="carousel-slide"><div class="content-wrapper">
+					<div>
+						<img src="https://via.placeholder.com/350x200" alt="" class="image-resize" alt="Stock Picture">
+					</div>
+					<div>
+						<h3>Project Title</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<a target="_blank" href="#"><i class="fab fa-github icon"></i></a>
+						<a target="_blank" href="#"><i class="fas fa-link icon"></i></a>
+					</div>
+				</div>
+				</li>
+			</ul>
+		</div>
+		<button class="carousel-button carousel-button-right">
+			<img src="images/right-chevron.svg" alt="Right chevron">
+		</button>
+		<div class="carousel-nav">
+			<button class="carousel-indicator current-slide"></button>
+			<button class="carousel-indicator"></button>
+			<button class="carousel-indicator"></button>
+		</div>
+	</div>
+<!--END OF CAROUSEL TRIAL-->
 	<footer class="contact" id="contact-me">
 		<div>
 			<h2>Contact me</h2>
@@ -131,6 +186,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/carousel.js"></script>
 </body>
 
 </html>

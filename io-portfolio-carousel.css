@@ -124,3 +124,60 @@ text-align: center;
 		flex-direction: column;
 	}
 }
+
+/* from here on, carousel css*/
+.carousel {
+	postion: relative;
+	height: 600px;
+	width: 80%;
+	margin: 0 auto;
+}
+.carousel-slide {
+	width: 100%;
+}
+.carousel-track-container {
+	background: lightblue;
+	padding: 10px;
+}
+.carousel-track{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.carousel-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: transparent;
+	border: 0;
+	width: 5%;
+	cursor: pointer;
+}
+
+.carousel-button-left {
+	left: -10px;
+	width: 5%;
+}
+
+.carousel-button-right {
+	right: 10px;
+	width: 5%;
+}
+.carousel-nav {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+
+.carousel-indicator {
+	border: 0;
+	border-radius: 50%;
+	height: 12px;
+	width: 12px;
+	background: #cccccc;
+	margin: 0 10px;
+}
+
+.carousel-indicator.current-slide {
+	background: #000000;
+}
