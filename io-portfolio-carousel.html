@@ -22,7 +22,7 @@
 		</div>
 	</nav>
 
-	<!-- <section class="introduction" id="introduction">
+	<section class="introduction" id="introduction">
 		<div class="content-wrapper">
 
 			<div>
@@ -36,14 +36,16 @@
 			<img src="images/about-me-photo.jpg" class="image-resize" alt="My profile picture">
 			<div>
 				<h2>About me</h2>
-				<p>I'd used HTML and CSS a little in my previous role as an IT Technical Support and really enjoyed it. I love solving problems and trying to find effective, 
-					elegant solutions. I'm currently on a full stack software development bootcamp with io Academy in Bath and am really looking forward to putting my new found
-					skills to the test and continuing my learning journey in the real world.</p>
+				<p>I'd used HTML and CSS a little in my previous role as an IT Technical Support and really enjoyed it. I developed
+					a more serious interest in software when I managed to automate a few mmundane tasks using Microsoft Flow.
+					I love solving problems and trying to find effective, elegant solutions. I'm currently on a full stack software 
+					development bootcamp with io Academy in Bath and am really looking forward to putting my new foundskills to the 
+					test and continuing my learning journey in the real world.</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="portfolio" id="my-portfolio">
+	<!--<section class="portfolio" id="my-portfolio">
 		<div class="content-wrapper">
 			<h2>My Projects</h2>
 		</div>
@@ -122,61 +124,42 @@
 	</section> -->
 
 	<!--here onwards = carousel trial-->
-	<div class="carousel">
-		<button class="carousel-button carousel-button-left">
-			<img src="images/left-chevron.svg" alt="Left chevron">
-		</button>
-		<div class="carousel-track-container">
-			<ul class="carousel-track">
-				<li class="carousel-slide"><div class="content-wrapper">
-					<div>
-						<img src="https://via.placeholder.com/350x200" alt="" class="image-resize" alt="Stock Picture">
-					</div>
-					<div>
-						<h3>Project Title</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<a target="_blank" href="#"><i class="fab fa-github icon"></i></a>
-						<a target="_blank" href="#"><i class="fas fa-link icon"></i></a>
-					</div>
-				</div></li>
-				
-				<li class="carousel-slide"><div class="content-wrapper">
-					<div>
-						<img src="https://via.placeholder.com/350x200" alt="" class="image-resize" alt="Stock Picture">
-					</div>
-					<div>
-						<h3>Project Title</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<a target="_blank" href="#"><i class="fab fa-github icon"></i></a>
-						<a target="_blank" href="#"><i class="fas fa-link icon"></i></a>
-					</div>
-				</div>
-				</li>
-				<li class="carousel-slide"><div class="content-wrapper">
-					<div>
-						<img src="https://via.placeholder.com/350x200" alt="" class="image-resize" alt="Stock Picture">
-					</div>
-					<div>
-						<h3>Project Title</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<a target="_blank" href="#"><i class="fab fa-github icon"></i></a>
-						<a target="_blank" href="#"><i class="fas fa-link icon"></i></a>
-					</div>
-				</div>
-				</li>
-			</ul>
-		</div>
-		<button class="carousel-button carousel-button-right">
-			<img src="images/right-chevron.svg" alt="Right chevron">
-		</button>
-		<div class="carousel-nav">
-			<button class="carousel-indicator current-slide"></button>
-			<button class="carousel-indicator"></button>
-			<button class="carousel-indicator"></button>
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+  
+	<div class="mySlides fade">
+	  <img class="site-picture" src="images/planimation.gif">
+	  <div class="portfolio-caption">
+			<p>This was an exercise set during the bootcamp. It was the first opportunity to play a little with
+				CSS animations, which I thoroughly enjoyed.</p>
 		</div>
 	</div>
-<!--END OF CAROUSEL TRIAL-->
-	<footer class="contact" id="contact-me">
+  
+	<div class="mySlides fade">
+	  <img class="site-picture" src="images/Portfolio-screenshot.jpg">
+	  <div class="portfolio-caption">
+		  <p>This project is a portfolio of my projects. It's also the website you're browsing at the moment. It utilises HTML and CSS and 
+		was created after the first 5 days of my coding bootcamp.
+		</p>
+	</div>
+	</div>
+  
+	<!-- Next and previous buttons -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  
+	<div><footer class="contact" id="contact-me">
 		<div>
 			<h2>Contact me</h2>
 			<div class="social-icons">
@@ -186,6 +169,7 @@
 			</div>
 		</div>
 	</footer>
+</div>	
 	<script src="js/carousel.js"></script>
 </body>
 
